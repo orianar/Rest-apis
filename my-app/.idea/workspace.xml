@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="" />
+    <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/componentes/productos/EditarProducto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/productos/EditarProducto.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +87,7 @@
       <workItem from="1646249749977" duration="897000" />
       <workItem from="1646253056086" duration="9366000" />
       <workItem from="1646334345134" duration="15618000" />
-      <workItem from="1646666797690" duration="114575000" />
+      <workItem from="1646666797690" duration="114582000" />
     </task>
     <servers />
   </component>

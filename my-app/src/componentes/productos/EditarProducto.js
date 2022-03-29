@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 
 function EditarProducto(){
-    // Obtener el ID del producto
+    Obtener el ID del producto
     const { id }= useParams();
     console.log(id);
 
