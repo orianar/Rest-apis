@@ -5,7 +5,7 @@ const shortid = require('shortid');
 const {nextValue} = require("shortid/lib/random/random-from-seed");
 
 const configuracionMulter = {
-    storage: fileStorage = multer.diskStorage({
+    storage: multer.diskStorage({
         destination: (req, file, cb) => {
             cb(null, __dirname+'../../uploads/');
         },
@@ -117,4 +117,19 @@ exports.eliminarProducto= async (req, res, next)=>{
         res.json(error);
         next();
     }
+}
+
+exports.buscarProducto= async (req, res, next)=>{
+    try {
+        //Obtener el query
+        const {query}= req.params;
+        const producto = await Productos.find({nombre: new RegExp(query, 'i')});
+        res.json(producto);
+
+    }catch (error){
+        console.log(error);
+        next();
+    }
+
+
 }

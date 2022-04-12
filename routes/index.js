@@ -42,6 +42,9 @@ module.exports= function (){
     // Eliminar un producto
     router.delete('/productos/:IdProducto', productoController.eliminarProducto);
 
+    // Busqueda de Productos
+    router.post('/productos/busqueda/:query', productoController.buscarProducto);
+
     //*** Pedidos */
 
     // Agrega nuevos pedidos

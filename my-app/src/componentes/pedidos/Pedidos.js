@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useEffect, useState, Fragment}from "react";
+import clienteAxios from '../../config/axios';
+
 
 function Pedidos(){
     return(

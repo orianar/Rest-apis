@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/componentes/pedidos/FormBuscarProducto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/pedidos/FormCantidadProducto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/pedidos/NuevoPedido.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../controllers/productoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../controllers/productoController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/productos/EditarProducto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/productos/EditarProducto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/clientes/Cliente.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/clientes/Cliente.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/pedidos/Pedidos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/pedidos/Pedidos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CRM-HTML-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,6 +51,26 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -66,6 +94,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.run" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
@@ -88,11 +118,23 @@
       <workItem from="1646249749977" duration="897000" />
       <workItem from="1646253056086" duration="9366000" />
       <workItem from="1646334345134" duration="15618000" />
-      <workItem from="1646666797690" duration="115496000" />
+      <workItem from="1646666797690" duration="128920000" />
+      <workItem from="1649094043945" duration="33611000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
