@@ -4,6 +4,7 @@ import clientesAxios from '../../config/axios';
 import FormBuscarProducto from "./FormBuscarProducto";
 import FormCantidadProducto from "./FormCantidadProducto";
 import Swal from "sweetalert2";
+import {useNavigate} from "react-router-dom";
 
 
 
@@ -82,10 +83,6 @@ function NuevoPedido() {
         // almacenarlo en el state
         guardarProductos(todosProductos);
 
-        // Actualizar el total a pagar
-        //actualizarTotal();
-
-
     }
     const aumentarProductos= i=>{
         // Copiar el arreglo para no mutarlo
@@ -98,8 +95,12 @@ function NuevoPedido() {
         // Almacenarlo en el state
         guardarProductos(todosProductos);
 
-        // Actualizar el total a pagar
-        //actualizarTotal();
+    }
+
+    // Elimina un producto del state
+    const eliminarProductoPedido= id =>{
+        const todosProductos= productos.filter(producto=> producto.producto !== id);
+        guardarProductos(todosProductos)
     }
 
     const actualizarTotal= ()=>{
@@ -110,14 +111,56 @@ function NuevoPedido() {
         }
         // Calcular el nuevo Total
         // Recorrer todos los productos, sus cantidades y precios
-        let nuevoTotal = productos.map(producto=> producto.cantidad* producto.precio).reduce((acc, currentValue) => acc + currentValue, 0) ;
+        let nuevoTotal = 0;
+
+        // recorrer todos los productos, sus cantidades y precios
+        productos.map(producto => nuevoTotal += (producto.cantidad * producto.precio)  );
+
         // Almacenar el total
         guardarTotal(nuevoTotal);
     }
 
+    // Almacena el pedido en la base de datos
+    const realizarPedido= async e => {
+        e.preventDefault();
 
+        const pedido = {
+            "cliente": id,
+            "pedido": productos,
+            "total": total,
+        }
+        // Almacenar en la Base de datos
+        const resultado = await clientesAxios.post(`/pedidos/nuevo/${id}`, pedido)
 
+        //Leer resultado
+        if (resultado.status ===200) {
+            //alerta de todo bien
+            Swal.fire({
+                type:'Succes',
+                title:'Correcto',
+                text:resultado.data.message,
+            })
+            //setSuccessRequest(1)
+        }else{
+            // Alerta de error
+            Swal.fire({
+                type:'error',
+                title:'Hubo un error',
+                text:'Vuelva a intentarlo'
+            })
+        }
+        setSuccessRequest(1)
+    }
 
+    // funcion para redireccionar
+    let navigate = useNavigate();
+    const [successRequest, setSuccessRequest] = useState(0)
+
+    // redireccionar
+    useEffect(() => {
+        if (successRequest === 1)
+            return navigate('/pedidos')
+    })
 
 
     return (
@@ -146,6 +189,7 @@ function NuevoPedido() {
                         producto={producto}
                         restarProductos={restarProductos}
                         aumentarProductos={aumentarProductos}
+                        eliminarProductoPedido={eliminarProductoPedido}
                         index={index}
 
 
@@ -161,7 +205,9 @@ function NuevoPedido() {
             </p>
 
             {total > 0 ? (
-                <form>
+                <form
+                    onSubmit={realizarPedido}
+                >
                     <input type="submit"
                            className=" btn btn-verde btn-block"
                            value="Realizar Pedido "/>

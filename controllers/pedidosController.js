@@ -4,6 +4,7 @@ const e = require("express");
 
 exports.nuevoPedido= async (req, res, next)=>{
     const pedido= new Pedidos(req.body);
+    console.log(JSON.stringify(req.body))
     try {
         // Almacenar el registro
         await pedido.save();
@@ -30,9 +31,12 @@ exports.mostarPedidos= async (req, res, next)=>{
 // Mostar pedidos por su ID
 exports.mostarPedido= async (req, res, next)=>{
     try{
-        const pedido= await Pedidos.findById(req.params.IdPedidos).populate('cliente').populate({path:'pedido.producto',
-            model:'Productos'
-        });
+        const pedido= await Pedidos.findById(req.params.IdPedidos)
+            .populate('cliente')
+            .populate({
+                path:'pedido.producto',
+                model:'Productos'
+            });
         res.json(pedido)
     }catch (error){
         res.json({mensaje: 'El pedido no existe'});
