@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="Calculando el total a pagar">
-      <change afterPath="$PROJECT_DIR$/src/componentes/pedidos/DetallesPedidos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllers/pedidosController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../controllers/pedidosController.js" afterDir="false" />
+    <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="Listando Pedidos correctamente">
+      <change afterPath="$PROJECT_DIR$/../controllers/usuariosController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../models/Usuarios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/pedidos/FormCantidadProducto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/pedidos/FormCantidadProducto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/pedidos/NuevoPedido.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/pedidos/NuevoPedido.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/pedidos/Pedidos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/pedidos/Pedidos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CRM-HTML-master/CRM-HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -124,7 +121,8 @@
       <workItem from="1646253056086" duration="9366000" />
       <workItem from="1646334345134" duration="15618000" />
       <workItem from="1646666797690" duration="128920000" />
-      <workItem from="1649094043945" duration="61706000" />
+      <workItem from="1649094043945" duration="63100000" />
+      <workItem from="1650129187671" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="Calculando el total a pagar">
       <created>1649733091581</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649733091581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Listando Pedidos correctamente">
+      <created>1649956676215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649956676215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Calculando el total a pagar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculando el total a pagar" />
+    <MESSAGE value="Listando Pedidos correctamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listando Pedidos correctamente" />
   </component>
 </project>
