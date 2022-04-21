@@ -12,7 +12,7 @@ const usuariosSchema= new Shema({
         type: String,
         required: "Agrega tu nombre",
     },
-    pasword:{
+    password:{
         type:String,
         required: true,
     }

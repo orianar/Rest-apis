@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6c224c3-c63f-4401-b67f-3588ad4d69b6" name="Changes" comment="Listando Pedidos correctamente">
-      <change afterPath="$PROJECT_DIR$/../controllers/usuariosController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../models/Usuarios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../controllers/usuariosController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../controllers/usuariosController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/Usuarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/../models/Usuarios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +49,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/componentes/auth" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\ori_2\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\213.6777.57\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ori_2\OneDrive\Desktop\restapis\my-app\src\componentes\auth" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -122,7 +132,7 @@
       <workItem from="1646334345134" duration="15618000" />
       <workItem from="1646666797690" duration="128920000" />
       <workItem from="1649094043945" duration="63100000" />
-      <workItem from="1650129187671" duration="620000" />
+      <workItem from="1650129187671" duration="9703000" />
     </task>
     <task id="LOCAL-00001" summary="Calculando el total a pagar">
       <created>1649733091581</created>
